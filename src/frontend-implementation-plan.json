@@ -1,0 +1,28 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update header logo static asset to match uploaded logo",
+  "requirements": [
+    {
+      "id": "REQ-23",
+      "summary": "Replace the site header logo by updating the existing generated static asset file so the header keeps the same image path while displaying the newly uploaded logo.",
+      "acceptanceCriteria": [
+        "`frontend/public/assets/generated/pachavda-wordmark-logo.dim_800x300.png` is updated to visually match the uploaded `download-1.webp` logo and is web-optimized.",
+        "The header logo displayed by `frontend/src/components/site/SiteHeader.tsx` renders the updated logo without layout issues on mobile and desktop.",
+        "No other routes/components require changes to reference the header logo (path remains `/assets/generated/pachavda-wordmark-logo.dim_800x300.png`)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/pachavda-wordmark-logo.dim_800x300.png",
+          "operation": "modify",
+          "description": "Replace the existing PNG artwork with a web-optimized PNG version of the uploaded logo (`download-1.webp`), centered on a clean 800x300 canvas to match the existing filename and dimensions so all existing references continue to work."
+        },
+        {
+          "path": "frontend/src/components/site/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Verify the header logo <img> remains pointed to `/assets/generated/pachavda-wordmark-logo.dim_800x300.png` and adjust only non-breaking rendering attributes (e.g., explicit width/height, decoding/loading hints, or responsive class tweaks) if needed to prevent layout shift and ensure the new logo fits well on mobile and desktop."
+        }
+      ]
+    }
+  ]
+}

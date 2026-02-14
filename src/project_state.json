@@ -1,0 +1,292 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Build a professional, mobile-friendly marketing website for Pachavda Event Management Company (Sanand, Gujarat) to showcase services and portfolio, build trust, and generate booking inquiries via WhatsApp/calls/forms with SEO and fast performance.",
+  "architectural_notes": [
+    "Business/location focus: Pachavda Event Management Company in Sanand, Gujarat; target areas Sanand, Ahmedabad, nearby.",
+    "Primary goal is lead generation (WhatsApp/calls/forms) and showcasing portfolio to build trust.",
+    "Design theme: light blue + black accents on white background; modern/elegant, clean layout with large images.",
+    "SEO/local keyword focus: event planner in Sanand, wedding decorator Sanand, birthday decoration Sanand, event management near Ahmedabad, wedding decoration services Gujarat.",
+    "Technical: HTTPS via SSL, domain/hosting, Google Maps integration, Google search submission, image compression for speed.",
+    "Ensure contact details (phone/WhatsApp number) are centralized (single config/source of truth) so updates propagate to all CTAs and links."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Edit Images\n- Replace the artwork with the uploaded circular blue emblem logo, centered on a clean wide canvas and optimized for web (pachavda-wordmark-logo.dim_800x300.png > pachavda-wordmark-logo.dim_800x300.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-multi-page-marketing-website-for-pachavda-event-management-company-with-these-pages-and-navigation-home-about-us-services-gallery-testimonials-contact",
+      "title": "Create a responsive multi-page marketing website for “Pachavda Event Management Company” with these pages and navigation: Home, About Us, Services, Gallery, Testimonials, Contact.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-home-page-layout-including-a-hero-banner-section-with-large-event-imagery-a-short-company-introduction-service-highlights-and-a-prominent-book-now-call-to-action",
+      "title": "Implement the Home page layout including: a hero/banner section with large event imagery, a short company introduction, service highlights, and a prominent “Book Now” call-to-action.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-about-us-page-including-company-story-mission-values-and-experience-expertise-sections-use-english-placeholder-copy-that-can-be-edited-later",
+      "title": "Implement the About Us page including: company story, mission & values, and experience & expertise sections (use English placeholder copy that can be edited later).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-services-page-that-lists-these-services-wedding-decoration-birthday-decoration-corporate-events-stage-setup-flower-decoration-balloon-decoration-lighting-sound",
+      "title": "Implement the Services page that lists these services: Wedding Decoration, Birthday Decoration, Corporate Events, Stage Setup, Flower Decoration, Balloon Decoration, Lighting & Sound.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-gallery-page-to-display-a-portfolio-of-past-event-work-supporting-both-images-and-videos-use-a-grid-layout-with-lightbox-modal-viewing-for-images-and-embedded-playback-for-videos",
+      "title": "Implement the Gallery page to display a portfolio of past event work supporting both images and videos (use a grid layout with lightbox/modal viewing for images and embedded playback for videos).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-testimonials-page-section-to-display-customer-feedback-cards-use-english-placeholder-testimonials-with-names-initials-and-optionally-a-rating",
+      "title": "Implement the Testimonials page/section to display customer feedback cards (use English placeholder testimonials with names/initials and optionally a rating).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-contact-page-including-visible-phone-number-a-call-now-button-tel-link-a-whatsapp-button-wa-me-link-a-google-maps-embed-for-sanand-gujarat-india-using-an-iframe-embed-and-a-contact-inquiry-form-with-fields-name-phone-number-event-type-event-date-location-message",
+      "title": "Implement the Contact page including: visible phone number, a “Call Now” button (tel: link), a WhatsApp button (wa.me link), a Google Maps embed for Sanand, Gujarat, India (using an iframe embed), and a contact/inquiry form with fields: Name, Phone number, Event type, Event date, Location, Message.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-site-wide-floating-or-persistent-whatsapp-chat-button-and-a-site-wide-call-now-button-optimized-for-mobile-usage",
+      "title": "Add a site-wide floating or persistent WhatsApp chat button and a site-wide Call Now button optimized for mobile usage.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-inquiry-booking-submission-flow-so-that-submitting-the-website-inquiry-form-a-stores-the-inquiry-in-the-backend-canister-and-b-shows-a-success-message-to-the-user-also-provide-an-optional-continue-on-whatsapp-action-that-opens-whatsapp-with-a-pre-filled-message-containing-the-submitted-form-details",
+      "title": "Implement inquiry/booking submission flow so that submitting the website inquiry form (a) stores the inquiry in the backend canister and (b) shows a success message to the user; also provide an optional “Continue on WhatsApp” action that opens WhatsApp with a pre-filled message containing the submitted form details.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-the-specified-design-direction-consistently-across-the-site-light-blue-black-white-color-palette-modern-elegant-style-clean-layout-large-event-images-and-easy-navigation",
+      "title": "Apply the specified design direction consistently across the site: light blue + black + white color palette, modern & elegant style, clean layout, large event images, and easy navigation.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-on-page-seo-basics-for-local-discovery-set-page-titles-descriptions-include-the-provided-seo-keywords-naturally-in-page-copy-where-appropriate-add-open-graph-tags-and-include-a-simple-json-ld-localbusiness-schema-with-business-name-and-location-sanand-gujarat-india",
+      "title": "Add on-page SEO basics for local discovery: set page titles/descriptions, include the provided SEO keywords naturally in page copy where appropriate, add Open Graph tags, and include a simple JSON-LD LocalBusiness schema with business name and location (Sanand, Gujarat, India).",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-optimize-performance-for-fast-loading-compress-optimize-local-images-use-responsive-image-sizing-where-possible-lazy-load-below-the-fold-media-gallery-and-avoid-loading-heavy-assets-on-initial-render",
+      "title": "Optimize performance for fast loading: compress/optimize local images, use responsive image sizing where possible, lazy-load below-the-fold media (gallery), and avoid loading heavy assets on initial render.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-social-media-links-placeholders-if-urls-are-not-provided-in-the-site-footer-header-and-ensure-they-open-in-a-new-tab",
+      "title": "Add social media links (placeholders if URLs are not provided) in the site footer/header and ensure they open in a new tab.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-simple-setup-launch-documentation-page-in-app-or-as-a-dedicated-frontend-route-that-lists-what-the-business-owner-must-do-for-domain-hosting-ssl-https-and-google-search-submission-using-neutral-step-by-step-guidance-no-external-service-integration",
+      "title": "Create a simple “Setup & Launch” documentation page in-app or as a dedicated frontend route that lists what the business owner must do for domain/hosting, SSL (HTTPS), and Google Search submission, using neutral step-by-step guidance (no external service integration).",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-clear-placeholder-section-for-future-expansion-items-without-implementing-them-online-booking-system-pricing-packages-page-blog-instagram-gallery-integration",
+      "title": "Add a clear placeholder section for future expansion items (without implementing them): Online booking system, Pricing packages page, Blog, Instagram gallery integration.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-and-include-a-set-of-locally-hosted-static-placeholder-brand-media-assets-and-wire-them-into-the-ui-logo-wordmark-hero-banner-and-gallery-placeholders-store-generated-assets-under-frontend-public-assets-generated-and-reference-them-directly-from-the-frontend",
+      "title": "Create and include a set of locally hosted static placeholder brand/media assets and wire them into the UI (logo/wordmark, hero banner, and gallery placeholders). Store generated assets under frontend/public/assets/generated and reference them directly from the frontend.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-site-whatsapp-contact-details-to-use-the-new-whatsapp-number-8780410844-everywhere-it-is-displayed-or-linked-including-the-floating-whatsapp-action-button-the-contact-page-whatsapp-link-button-and-any-other-ui-that-reads-from-shared-business-contact-info",
+      "title": "Update the site WhatsApp contact details to use the new WhatsApp number 8780410844 everywhere it is displayed or linked, including the floating WhatsApp action button, the Contact page WhatsApp link/button, and any other UI that reads from shared business contact info.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-whatsapp-inquiry-follow-up-flow-so-that-the-continue-on-whatsapp-action-opens-whatsapp-to-the-new-number-8780410844-and-does-not-use-any-outdated-hardcoded-wa-me-number",
+      "title": "Update the WhatsApp inquiry follow-up flow so that the \"Continue on WhatsApp\" action opens WhatsApp to the new number 8780410844 (and does not use any outdated hardcoded `wa.me` number).",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-uploaded-logo-image-s-as-static-frontend-assets-under-frontend-public-assets-generated-and-ensure-they-are-optimized-for-web-use-keep-transparency-if-present-avoid-visible-compression-artifacts",
+      "title": "Add the uploaded logo image(s) as static frontend assets under `frontend/public/assets/generated/` and ensure they are optimized for web use (keep transparency if present, avoid visible compression artifacts).",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-header-logo-image-assets-generated-pachavda-wordmark-logo-dim-800x300-png-so-the-site-header-displays-the-new-uploaded-logo-instead-of-the-old-placeholder-wordmark",
+      "title": "Replace the current header logo image (`/assets/generated/pachavda-wordmark-logo.dim_800x300.png`) so the Site Header displays the new uploaded logo instead of the old placeholder wordmark.",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-site-metadata-imagery-to-align-with-the-new-logo-by-adding-a-favicon-app-icon-based-on-the-uploaded-logo-and-wiring-it-into-frontend-index-html",
+      "title": "Update site metadata imagery to align with the new logo by adding a favicon/app icon based on the uploaded logo and wiring it into `frontend/index.html`.",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-site-header-logo-image-the-img-at-xpath-html-1-body-1-div-1-div-1-header-1-div-1-div-1-a-1-img-1-by-updating-the-static-asset-used-at-assets-generated-pachavda-wordmark-logo-dim-800x300-png-so-it-uses-the-newly-uploaded-logo-image-download-1-webp-keep-the-existing-image-path-so-no-other-parts-of-the-ui-break",
+      "title": "Replace the Site Header logo image (the <img> at XPath `/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/a[1]/img[1]`) by updating the static asset used at `/assets/generated/pachavda-wordmark-logo.dim_800x300.png` so it uses the newly uploaded logo image (`download-1.webp`). Keep the existing image path so no other parts of the UI break.",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create core website pages: Home, About Us, Services, Gallery, Testimonials, Contact",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Home page hero banner with event photos, intro, service highlights, and prominent Book Now CTA",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Services page listing offerings (wedding, birthday, corporate, stage setup, flower/balloon decor, lighting & sound)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Gallery for photos/videos of past events",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Testimonials section/page for customer feedback",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Contact page with phone, WhatsApp button, Google Map embed, and inquiry/booking form",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Lead capture features: WhatsApp chat button, Call Now button, and inquiry form fields (name, phone, event type/date, location, message)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Mobile-friendly responsive design with modern, elegant clean layout and large event imagery",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Performance: fast loading with image compression/optimization",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "SEO setup: on-page SEO for local keywords, Google search submission, and basic technical SEO",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Domain/hosting setup with SSL (HTTPS)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Add social media links and optional future expansion items (pricing packages, blog, Instagram gallery integration, online booking system)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-22",
+      "summary": "Backend: implement data model and APIs in the single Motoko actor to store and list inquiries (at minimum: id, timestamp, name, phone, eventType, eventDate, location, message).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-23",
+      "summary": "Update WhatsApp contact number to 8780410844 across the site (WhatsApp button/link and any pre-filled WhatsApp inquiry message)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-24",
+      "summary": "Add or update the Pachavda Event Management Company logo asset (replace placeholder logo/wordmark across the site)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Pachavda Event Management Company Website",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

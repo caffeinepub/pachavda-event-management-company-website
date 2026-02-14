@@ -1,0 +1,24 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-replace-the-site-header-logo-image-the-img-at-xpath-html-1-body-1-div-1-div-1-header-1-div-1-div-1-a-1-img-1-by-updating-the-static-asset-used-at-assets-generated-pachavda-wordmark-logo-dim-800x300-png-so-it-uses-the-newly-uploaded-logo-image-download-1-webp-keep-the-existing-image-path-so-no-other-parts-of-the-ui-break",
+      "featureTitle": "Replace the Site Header logo image (the <img> at XPath `/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/a[1]/img[1]`) by updating the static asset used at `/assets/generated/pachavda-wordmark-logo.dim_800x300.png` so it uses the newly uploaded logo image (`download-1.webp`). Keep the existing image path so no other parts of the UI break.",
+      "files": [
+        "frontend/src/components/site/SiteHeader.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-23"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

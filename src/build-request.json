@@ -1,0 +1,51 @@
+{
+  "kind": "build_request",
+  "title": "Replace header logo image with uploaded logo",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-23",
+      "text": "Replace the Site Header logo image (the <img> at XPath `/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/a[1]/img[1]`) by updating the static asset used at `/assets/generated/pachavda-wordmark-logo.dim_800x300.png` so it uses the newly uploaded logo image (`download-1.webp`). Keep the existing image path so no other parts of the UI break.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "replaces this png in website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "`frontend/public/assets/generated/pachavda-wordmark-logo.dim_800x300.png` is updated to visually match the uploaded `download-1.webp` logo and is web-optimized.",
+        "The header logo displayed by `frontend/src/components/site/SiteHeader.tsx` renders the updated logo without layout issues on mobile and desktop.",
+        "No other routes/components require changes to reference the header logo (path remains `/assets/generated/pachavda-wordmark-logo.dim_800x300.png`)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under `frontend/src/components/ui` (read-only).",
+    "Do not edit immutable hook files listed in SYSTEM_CONTEXT (compose around them instead).",
+    "Keep all backend logic within the existing single Motoko actor; no backend changes are required for this request."
+  ],
+  "nonGoals": [
+    "Changing the favicon/app icon or other site metadata imagery (unless it is required to accomplish the header-logo replacement).",
+    "Updating gallery images or hero banner imagery.",
+    "Changing business contact info or WhatsApp behavior."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": [
+      "Replace the artwork with the uploaded circular blue emblem logo, centered on a clean wide canvas and optimized for web (pachavda-wordmark-logo.dim_800x300.png > pachavda-wordmark-logo.dim_800x300.png)"
+    ]
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

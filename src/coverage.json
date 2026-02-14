@@ -1,0 +1,40 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-14T09:51:53.249Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-23",
+        "summary": "Replace the Site Header logo image (the <img> at XPath `/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/a[1]/img[1]`) by updating the static asset used at `/assets/generated/pachavda-wordmark-logo.dim_800x300.png` so it uses the newly uploaded logo image (`download-1.webp`). Keep the existing image path so no other parts of the UI break.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/pachavda-wordmark-logo.dim_800x300.png",
+          "frontend/src/components/site/SiteHeader.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/pachavda-wordmark-logo.dim_800x300.png",
+          "frontend/src/components/site/SiteHeader.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/pachavda-wordmark-logo.dim_800x300.png",
+    "frontend/src/components/site/SiteHeader.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
